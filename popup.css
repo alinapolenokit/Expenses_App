@@ -1,0 +1,70 @@
+.editor-limit-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .js-popup-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup-content {
+    position: relative;
+    width: 300px;
+    padding: 50px 30px;
+    background-color: #292634;
+    border: 1px solid #242424;
+    border-radius: 5px;
+  }
+  
+  .popup__title {
+    font-size: 20px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+
+  .popup-btn-change-limit {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    background-color: #111233;
+    border: 1px solid #070be2;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  .popup-btn-change-limit:hover {
+      background-color: #070be2;
+      border: 1px solid #0094FF;
+  }
+  
+  .popup-btn-close {
+    position: absolute;
+    top: 60px;
+    right: 596px;
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+    background: url(editor_close.png) no-repeat center / cover;
+    filter: invert(1);
+    transition: all 0.3s ease;
+  }
+  
+  .popup-btn-close:hover {
+    transform: rotate(90deg);
+  }

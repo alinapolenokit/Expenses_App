@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="popup.css">
+    
+    
+    <title>Expenses App</title>
+    
+</head>
+<body>
+          
+        <div class="expenses_title">
+            <h1>Учёт расходов</h1>
+        </div>
+
+        <div class="container_expenses">
+
+            <div class="left_container_expenses">
+               <div class="input_sum">
+
+                <div class="expenses_sum">
+                    <input class="js-input input " 
+                    type="number"
+                    min="0"
+                    placeholder="Введите сумму расходов">
+                </div>                
+                
+    
+                 <select class="js-category categorySelect">
+                    <option hidden disabled selected value="Категория">Категория</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Кафе">Кафе и рестораны</option>
+                    <option value="Аптека">Аптека</option>
+                    <option value="Развлечения">Развлечения</option>
+                </select>
+    
+                <button class="js-button button_sum">Добавить</button>
+               </div>
+                
+
+                <div class="stats">
+                    <div class="stats__limit_box">
+                        <div class="stats_limit">
+                        <span class="label">Лимит:</span>
+                        <span class="js-limit rub"> </span>
+                    </div>
+                        <img class="js-editor-limit-popup-btn-open editor-limit-popup-btn-open editor_limite"
+                        src="/editor.png" 
+                        alt="редактор лимита"> 
+                    </div>
+                    
+
+                    <div class="stats_sum">
+                        <span class="label">Сумма:</span>
+                        <span class="js-sum"> руб.</span></p>  
+                    </div>
+    
+                    <div class="stats_status">
+                        <span class="label">Статус:</span>
+                        <span class="js-status status_positive"></span></p>  
+                    </div>
+                </div>
+    
+                <button class="js-clearButton clearButton">Сбросить расходы</button>
+            </div>
+
+
+
+                <div class="js-editor-limit-popup editor-limit-popup">
+                    <div class="popup__content">
+                     <p class="popup__title">Новый лимит</p>
+                     <button class="js-popup-btn-close popup-btn-close"></button>
+                     <input 
+                        class="js-input-new-limit input-new-limit" 
+                        type="number" 
+                        placeholder="Задайте новый лимит">
+                     <button class="js-popup-btn-change-limit popup-btn-change-limit">
+                        Добавить
+                    </button>
+                    </div>
+                </div>
+
+        
+                        
+       <div class="right_container_expenses">
+        <div class="expense_history">
+            <h2>История расходов</h2> 
+        </div>
+        <div class="js-history history"></div>
+       </div>
+           
+          
+    
+        
+        
+           
+        </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
